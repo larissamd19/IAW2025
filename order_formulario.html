@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Panadería de Larissa</title>
+</head>
+<body>
+    <h3>Selección de productos de panadería: </h3>
+    <form action="order_proceso.php" method="post">
+        Nombre: <input type="text" name="customer_name" required><br>
+        Baguettes: <input type="number" name="baguettes" min="0" value="0"><br>
+        Rolls: <input type="number" name="rolls" min="0" value="0"><br>
+        Sandwich Bread: <input type="number" name="sandwich_bread" min="0" value="0"><br>
+        
+        <label for="method">Selecciona el método:</label>
+        <select name="method">
+            <option value="GET">GET</option>
+            <option value="POST">POST</option>
+        </select><br>
+
+        <button type="submit">Place Order</button>
+    </form>
+</body>
+</html>
